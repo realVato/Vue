@@ -19,6 +19,9 @@
             <div class="product-info">
                 <h1>{{ product }}</h1>
                 <p>{{ description }}</p>
+                <!-- stock -->
+                <span v-if="onSale">In Stock!</span>
+                <span v-else>Out Of Stock!</span>
             </div>
             <button><a :href="portofolio">ofc me</a></button>
         </div>
