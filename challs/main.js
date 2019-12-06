@@ -7,5 +7,14 @@ const app = new Vue({
         portofolio: 'https://tomastalalas.netlify.com/',
         onSale: true,
         sizes: ['Extra small', 'Small', 'Medium', 'Large', 'Extra large'],
+        cart: 0,
+    },
+    methods: {
+        addToCart() {
+            this.cart += 1;
+        },
+        removeFromCart() {
+            this.cart -= 1;
+        }
     }
 })

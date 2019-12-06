@@ -28,6 +28,13 @@
                 <ul>
                     <li v-for="size in sizes">{{ size }}</li>
                 </ul>
+                <!-- buttons -->
+                <button v-on:click="addToCart">Add to cart</button>
+                <button v-on:click="removeFromCart">Remove item</button>
+
+                <div class="cart">
+                    <p>Cart ({{ cart }})</p>
+                </div>
             </div>
             <!-- <button><a :href="portofolio">ofc me</a></button> -->
         </div>
